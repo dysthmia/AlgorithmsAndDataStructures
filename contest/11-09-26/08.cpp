@@ -29,7 +29,7 @@ int64_t mod_inv(int64_t a, int64_t m){
     int64_t x, y;
     int64_t g = gcd(a, m, x, y);
 
-    if (g!=1) return -1; // крч тогда не существует обратного
+    if (g!=1) return -1;
 
     x = ((x%m)+m)%m;
 
@@ -58,11 +58,7 @@ int main(){
     int64_t a, n, m;
     std::cin >> a >> n >> m;
 
-    int64_t x, y;
-    int64_t g = gcd (a,m,x,y);
-
     int64_t sum = sum_mod(a, n, m);
-    
     std::cout << sum << "\n";
     
     return 0;
