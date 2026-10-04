@@ -173,4 +173,20 @@ class SingleLinkedList {
             }
             return cur->value;
         }
+
+        bool have_circle () const {
+            Node* slow = _head;
+            Node* fast = _head;
+
+            while (fast != nullptr && fast->next != nullptr) {
+                slow = slow->next;
+                fast = fast->next->next;
+
+                if (slow == fast) {
+                    return true;
+                }
+            }
+
+            return false;
+        }
 };
