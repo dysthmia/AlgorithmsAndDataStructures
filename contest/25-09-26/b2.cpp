@@ -1,3 +1,5 @@
+// Обратный полиномиальный хэш
+
 #include <iostream>
 #include <string>
 

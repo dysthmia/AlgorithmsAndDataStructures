@@ -1,3 +1,5 @@
+// определить прямой полиномиальный хэш строки
+
 #include <iostream>
 #include <string>
 

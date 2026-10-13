@@ -1,3 +1,5 @@
+// хэш по схеме горнера
+
 #include <iostream>
 #include <vector>
 
