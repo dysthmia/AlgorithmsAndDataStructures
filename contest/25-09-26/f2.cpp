@@ -1,3 +1,5 @@
+// шифр бэкона
+
 #include <iostream>
 #include <set>
 #include <vector>
